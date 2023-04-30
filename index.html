@@ -7,6 +7,8 @@
     <title>Campus Canteen</title>
     <!--bootstrap_cdn-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS_StyleSheet-->
     <link rel="stylesheet" href="index.css">
 </head>
@@ -21,19 +23,34 @@
             </button>
       
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Categories</a>
+                  <a class="nav-link" href="#">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#">Contact Us</a>
                 </li>
+              </ul>
+
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                  <a class="btn btn-primary" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                </li> 
+
+                <form action="" class="d-flex">
+                  <input class="form-control" type="text" placeholder="Search">
+                  <li class="nav-item active">
+                    <a class="btn btn-info" href="#"><i class="fa-solid fa-magnifying-glass text-light"></i></a>
+                  </li>
+                </form>
+                
+              </ul>
             </div>
         </div>
       </nav>
@@ -72,7 +89,7 @@
               <button type="button" class="btn-color">Order Now</button>
             </div>
           <div class="col-md-5">
-            <img class="d-block w-100 m-md-5 img-fluid" src="https://cdn.shopify.com/s/files/1/0077/2816/9027/products/IMG_3280_800x.jpg?v=1667914963" alt="Snd slide">
+            <img class="d-block w-100 m-md-5 img-fluid" src="https://wengers.in/wp-content/uploads/2020/09/cream_roll.jpg" alt="Snd slide">
           </div>
       </div>
     </div>
@@ -151,31 +168,50 @@
           <!--Bakery-->
           <h1 class="mt-5 mb-2" id="shoes">Bakery</h1>
           <div class="card-deck">
-            <div class="card card-background-color shadow border-0">
-              <img src="https://preppykitchen.com/wp-content/uploads/2021/09/Biscuits-Feature.jpg" class="card-img-top" alt="..." style="height:350px;">
-              <div class="card-body ">
-                <h5 class="card-title font-weight-bold">Biscuit</h5>
-                <p class="card-text">30.00</p>
+            
+              <div class="card card-background-color shadow border-0">
+                <a href="product.html">
+                  <img src="https://preppykitchen.com/wp-content/uploads/2021/09/Biscuits-Feature.jpg" class="card-img-top" alt="..."
+                    style="height:350px;">
+                  <div class="card-body ">
+                    <h5 class="card-title font-weight-bold">Biscuit</h5>
+                    <p class="card-text">30.00</p>
+                  </div>
+                  <button class="btn-color m-2">Order Now</button>
+                </a>
               </div>
-              <button class="btn-color m-2">Order Now</button>
-            </div>
-            <div class="card card-background-color border-0">
-              <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR8C8noXy-gngMs_Kyw1_Nrqj5LaTElvn6lpwAj47fLPmdpPyagoZkpYZCLAs0riqs1" class="card-img-top" alt="..." style="height:350px;">
-              <div class="card-body">
-                <h5 class="card-title font-weight-bold">Cake</h5>
-                <p class="card-text">1,000.00</p>
+              
+              
+              
+              <div class="card card-background-color border-0">
+                <a href="product.html">
+                  <img
+                    src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcR8C8noXy-gngMs_Kyw1_Nrqj5LaTElvn6lpwAj47fLPmdpPyagoZkpYZCLAs0riqs1"
+                    class="card-img-top" alt="..." style="height:350px;">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Cake</h5>
+                    <p class="card-text">1,000.00</p>
+                  </div>
+                  <button class="btn-color m-2">Order Now</button>
+                </a>
               </div>
-              <button class="btn-color m-2">Order Now</button>
-            </div>
-            <div class="card card-background-color border-0">
-              <img src="https://cdn.shopify.com/s/files/1/0077/2816/9027/products/IMG_3280_800x.jpg?v=1667914963" class="card-img-top" alt="..." style="height:350px;">
-              <div class="card-body">
-                <h5 class="card-title font-weight-bold">Cream Roll</h5>
-                <p class="card-text">50.00</p>
+              
+              
+              
+              <div class="card card-background-color border-0">
+                <a href="product.html">
+                  <img src="https://wengers.in/wp-content/uploads/2020/09/cream_roll.jpg"
+                    class="card-img-top" alt="..." style="height:350px;">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Cream Roll</h5>
+                    <p class="card-text">50.00</p>
+                  </div>
+                  <button class="btn-color m-2">Order Now</button>
+                </a>
               </div>
-              <button class="btn-color m-2">Order Now</button>
-            </div>
           </div>
+            
+            
           <!--Bakery End-->
 
 
@@ -209,7 +245,7 @@
           </div> -->
           
           <!--Subscribe part starts-->
-          <div class="subscribe-part-style d-flex justify-content-center p-md-5 p-3">
+          <div class="subscribe-part-style d-flex justify-content-center p-md-5 p-3 mb-5">
             <div class=" "> 
               <h1 class="font-weight-bold">LET'S STAY IN TOUCH</h1>
               <p>Get upades in sales, specials and more</p>
@@ -240,10 +276,14 @@
              <!-- Modal End-->
           </div>
           <!--Subscribe part End-->
-          <footer class="text-center m-md-5 mt-5">
-                <p>©2025. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
-          </footer>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom mt-auto py-3 bg-dark">
+      <div class="container text-center">
+        <p class="mb-0 text-light">©2023. campusCanteen. All rights reserved. Dhaka.</p>
+      </div>
+    </footer>
     <!--js_cdn-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
